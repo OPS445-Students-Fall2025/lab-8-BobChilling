@@ -1,0 +1,43 @@
+
+PLAY [vmlab] *******************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [update apache] ***********************************************************
+ok: [vmlab]
+
+TASK [restart apache] **********************************************************
+changed: [vmlab]
+
+TASK [install EPEL] ************************************************************
+ok: [vmlab]
+
+TASK [remove tree package] *****************************************************
+ok: [vmlab]
+
+TASK [set hostname] ************************************************************
+ok: [vmlab]
+
+TASK [create sudo account] *****************************************************
+ok: [vmlab]
+
+TASK [allow sudo without password] *********************************************
+ok: [vmlab]
+
+TASK [add ssh key] *************************************************************
+ok: [vmlab]
+
+TASK [create ops445 lab directories] *******************************************
+ok: [vmlab] => (item=1)
+ok: [vmlab] => (item=2)
+ok: [vmlab] => (item=3)
+ok: [vmlab] => (item=4)
+ok: [vmlab] => (item=5)
+ok: [vmlab] => (item=6)
+ok: [vmlab] => (item=7)
+ok: [vmlab] => (item=8)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=10   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
